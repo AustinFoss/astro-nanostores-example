@@ -1,0 +1,14 @@
+import { Root } from '../layouts/Root.mdx'
+import Counter from '../components/Counter.jsx'
+import SvelteCounter from '../components/SvelteCounter.svelte'
+
+export const title = 'Astro , MDX, JSX (MAXX)' 
+
+<Root>
+
+# {title}
+
+<Counter client:load />
+<SvelteCounter client:load />
+
+</ Root>

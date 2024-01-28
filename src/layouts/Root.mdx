@@ -1,0 +1,29 @@
+import { ViewTransitions } from 'astro:transitions';
+import Navigation from '../components/Navigation'
+
+export function Root({ children }) {
+
+    return (
+        
+        <html transition:animate="none">
+
+            <head>
+                <ViewTransitions />
+            </head>
+
+            <body>
+
+                <header transition:persist>
+                    <Navigation />
+                </header>
+
+                <main transition:animate="fade">
+                    {children}
+                </main>
+
+            </body>
+        
+        </html>
+    
+    );
+}
