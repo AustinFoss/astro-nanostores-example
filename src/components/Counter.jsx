@@ -8,7 +8,7 @@ export default function() {
 
     return (<>
         <button onClick={decrementNumber}>-</button>
-        <span>{$number}</span>
+        <span>{$number()}</span>
         <button onClick={incrementNumber}>+</button>
     </>);
 }
