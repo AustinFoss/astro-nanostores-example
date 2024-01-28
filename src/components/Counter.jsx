@@ -4,7 +4,6 @@ import { number, incrementNumber, decrementNumber } from '../stores/main';
 export default function() {
 
     const $number = useStore(number);
-    console.log(number.get());
 
     return (<>
         <button onClick={decrementNumber}>-</button>
