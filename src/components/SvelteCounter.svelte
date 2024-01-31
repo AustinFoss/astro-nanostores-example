@@ -7,6 +7,8 @@
     
 <div id="NumberCounter">
 
+    <h2>Svelte Counter</h2>
+
     <button
         on:click={() => {decrementNumber()}} id="decrementNumber"
         class="btn"
